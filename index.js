@@ -39,18 +39,18 @@ app.post("/", function (req, res) {
   });
 
   user.save();
-  console.log("Done");
+  //console.log("Done");
   res.sendFile(__dirname + "/done.html");
 
-  User.find(function (err, users) {
-    if (err) {
-      console.log(err);
-    } else {
-      users.forEach(function (user) {
-        console.log(user.name);
-      });
-    }
-  });
+  //User.find(function (err, users) {
+  //  if (err) {
+  //  console.log(err);
+  //  } else {
+  //  users.forEach(function (user) {
+  //    console.log(user.name);
+  //  });
+  //  }
+  // });
 });
 
 app.listen(3000, function () {
